@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Appointment Page</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/BookanAppointment.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="title">Book An Appointment</div>
+        <form action="form">
+            <div class="user-detials">
+                <div class="input-box">
+                    <span class="details">Name</span>
+                    <input type="text" id="Nametext" placeholder="Enter your Name" required />
+                </div>
+                <!--Phone Number-->
+                <div class="input-box">
+                    <span class="details">PhoneNumber</span>
+                    <input type="number" id="Mobiletext" placeholder="Enter your Mobile Number" required />
+                </div>
+
+                <!--Date and time-->
+                <div class="input-box">
+                    <span class="details">Date/Time</span>
+                    <input type="datetime-local" id="Datetext" placeholder="Enter Suitable Time" required />
+                </div>
+                <!--event -->
+                <div class="input-box">
+                    <span class="details" id="Eventtext">Choose An Event</span>
+                    <select id="input-group" required>
+                        <option value="">Wedding Bells</option>
+                        <option value="">Corporate Parties</option>
+                        <option value="">Birthday Bash</option>
+                        <option value="">All About the Babies</option>
+                        <option value="">Festives</option>
+                        <option value="">Casuals to Cocktails</option>
+                        <option value="">Photoshoot</option>
+                        <option value="">Other</option>
+                    </select>
+                </div>
+                <!--no of guest-->
+                <div class="input-box">
+                    <span class="details" id="Guesttext">Number of Guest</span>
+                    <input type="number" placeholder="Example:50-100" required />
+                </div>
+                <!--Location Preference-->
+                <div class="input-box">
+                    <span class="details" id="Loctext">Location Prefered</span>
+                    <input type="text" placeholder="Example:Mumbai,Pune" required />
+                </div>
+            </div>
+            <div class="other-details">
+                <label class="inst">*Date and Time are for online/offline appointment for understanding your needs.</label>
+                <br />
+                <label class="inst">*We do not share your details with anyone.</label>
+            </div>
+            <div class="button">
+                <input type="submit" value="submit" id=" submitbtn" > <a href="../../Index.html"></a>
+            </div>
+        </form>
+    </div>
+     <!--The core Firebase JS SDK is always required and must be listed first 
+     TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries--> 
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+    
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyADOGEt_txwrHnACPfDZLWvwFPyy3MWHN8",
+            authDomain: "cheersdb-7bc74.firebaseapp.com",
+            projectId: "cheersdb-7bc74",
+            storageBucket: "cheersdb-7bc74.appspot.com",
+            messagingSenderId: "266948630909",
+            appId: "1:266948630909:web:318bf36e012a4e09a6d414"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+    </script>
+
+    <script type="text/javascript" src="assets/js/appointmant.js"></script>
+</body>
+</html>

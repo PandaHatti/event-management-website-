@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login/Registration</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+</head>
+<body>
+    
+    <div class="cont">
+        <div class="form sign-in">
+            <h2>Sign In</h2>
+
+            <!--email id-->
+            <label>
+                <span>Email Id</span>
+                <input type="email" name="email" />
+            </label>
+
+            <!--password-->
+            <label>
+                <span>Password</span>
+                <input type="password" name="password" />
+            </label>
+            <!--button-->
+            <button class="submit" type="button" onclick="validate()">Sign In</button>
+            <!--forgot password-->
+            <p class="forgot-pass">Forgot Password?</p>
+
+            <div class="social-icons">
+                <ul>
+                    <li><img src="assets/icons/instagram (2).png" /></li>
+                    <li><img src="assets/icons/whatsapp (2).png" /></li>
+                    <li><img src="assets/icons/gmail.png" /></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img-text m-up">
+                    <h2>New Here?</h2>
+                    <p> Sign up and get connected with us!</p>
+                </div>
+
+                <div class="img-text m-in">
+                    <h2>One of Us?</h2>
+                    <p> If you already have an account, Sign In then.</p>
+                </div>
+                <div class="img-btn">
+
+                    <span class="m-up">Sign Up</span>
+                    <span class="m-in">Sign In</span>
+                </div>
+            </div>
+            
+            <div class="form sign-up">
+                <h2>Sign Up</h2>
+                <!--name-->
+                <label>
+                    <span>Name</span>
+                    <input type="text" />
+                </label>
+                <!--Phone number-->
+                <label>
+                    <span>Phone Number</span>
+                    <input type="number" />
+                </label>
+                <!--email id-->
+                <label>
+                    <span>Email Id</span>
+                    <input type="email" />
+                </label>
+                <!--password-->
+                <label>
+                    <span>Password</span>
+                    <input type="password" />
+                </label>
+                <!--confirm pws-->
+                <label>
+                    <span>Confirm Password</span>
+                    <input type="password" />
+                </label>
+                <button type="button" class="submit"> Sign Up Now!</button>
+
+            </div>
+            </div>
+    </div>
+      
+    <script type="text/javascript" src="assets/js/login.js"></script>
+
+</body>
+</html>
